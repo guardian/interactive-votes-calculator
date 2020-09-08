@@ -1,0 +1,49 @@
+@import "fonts";
+@import "mq";
+@import "palette";
+// @import "enhancer";
+
+.interactive-atom {
+    margin: 0;
+    padding: 0;
+}
+
+.candidate-ecv {
+    @include fs-titlepiece(3);
+}
+
+.state-card {
+    background: #f6f6f6;
+    padding: 10px;
+    margin: 10px;
+}
+
+.candidate-button {
+    background: #dcdcdc;
+
+    color: #767676;
+
+    border: none;
+
+    padding: 1.5px 5px;
+    margin-right: 10px;
+
+    outline: none;
+
+    &.candidate-button--selected {
+        
+        color: white;
+        font-weight: bold;
+
+        &.candidate-button--biden {
+            background: #25428f;
+        }
+
+        &.candidate-button--trump {
+            background: #cc0a11;
+        }
+
+        
+
+    }
+}
